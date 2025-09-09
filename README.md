@@ -23,7 +23,7 @@ The main function, `task_refiner_llm`, accepts an LLM instance and a raw user br
   
 ```python  
 from langchain_core.language_models import BaseChatModel  
-from task_refiner_llm import refine_task_with_llm  
+from refine_task_with_llm import refine_task_with_llm  
   
 # Optional: create your own LLM or pass None to use default  
 result = refine_task_with_llm(  
