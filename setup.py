@@ -11,7 +11,7 @@ except FileNotFoundError:
 
 setup(
     name="task_refiner_llm",
-    version="2025.9.9",
+    version="2025.9.92037",
     description="Refine unstructured briefs into implementation-ready JSON via LLM7 and llmatch.",
     long_description=long_description,
     long_description_content_type="text/markdown",
