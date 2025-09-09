@@ -120,11 +120,7 @@ def refine_task_with_llm(
     )
 
     # Normalize capture
-    captured = response
-    if captured is None:
-        raise RuntimeError("LLM did not return JSON between markers.")
-    if isinstance(captured, (list, tuple)) and len(captured) > 0:
-        captured = captured[0]
+    captured = response["extracted_data"][0]
 
     if not isinstance(captured, str):
         raise RuntimeError("LLM did not return valid JSON string between markers.")
